@@ -1,2 +1,2 @@
-# patterntests
+# designpatterns
 software design pattern examples
