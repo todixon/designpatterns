@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyInjection", "DependencyInjection.csproj", "{F4A4B3D1-BDC6-446A-997C-57DF12C65891}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoadFromSpreadsheet", "..\LoadFromSpreadsheet\LoadFromSpreadsheet.csproj", "{F0791928-AD36-40ED-A81C-8843C8F47261}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoadFromSpreadsheet", "LoadFromSpreadsheet.csproj", "{A82FB90C-361D-429C-AD90-6018811179AD}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Customer", "..\Customer\Customer.sqlproj", "{F8A9117F-96F6-4192-97C7-98AECC661E46}"
 EndProject
@@ -15,14 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F4A4B3D1-BDC6-446A-997C-57DF12C65891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4A4B3D1-BDC6-446A-997C-57DF12C65891}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4A4B3D1-BDC6-446A-997C-57DF12C65891}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4A4B3D1-BDC6-446A-997C-57DF12C65891}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F0791928-AD36-40ED-A81C-8843C8F47261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F0791928-AD36-40ED-A81C-8843C8F47261}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F0791928-AD36-40ED-A81C-8843C8F47261}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F0791928-AD36-40ED-A81C-8843C8F47261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A82FB90C-361D-429C-AD90-6018811179AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A82FB90C-361D-429C-AD90-6018811179AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A82FB90C-361D-429C-AD90-6018811179AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A82FB90C-361D-429C-AD90-6018811179AD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F8A9117F-96F6-4192-97C7-98AECC661E46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F8A9117F-96F6-4192-97C7-98AECC661E46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8A9117F-96F6-4192-97C7-98AECC661E46}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
@@ -34,6 +28,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2BAFD22C-4BE4-4678-9832-EA6AB02F6129}
+		SolutionGuid = {EDA44FE7-3F9F-4FFE-934D-76E329C1BAC0}
 	EndGlobalSection
 EndGlobal
