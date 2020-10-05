@@ -40,6 +40,7 @@ namespace LoadFromSpreadsheet
             {
                 Log.Logger.Information($"Processing file");
                 using SqlConnection db = new SqlConnection(_appsettings.ImportDB);
+                // Verify appsettings location for spreadsheet before starting!
                 using ExcelPackage package = new ExcelPackage(new FileInfo(_appsettings.ImportSpreadsheet));
 
                 ExcelWorksheet worksheet = package.Workbook.Worksheets.First();

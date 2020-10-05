@@ -36,6 +36,7 @@ namespace LoadFromSpreadsheet
             string downloadlog = $@"import_{timestring}.log";
 
 
+            // Add application settings files
             var builder = new ConfigurationBuilder()
                 .SetBasePath(logpath)
                 .AddJsonFile(Path.Combine(logpath, "appsettings.json"), optional: false, reloadOnChange: true)      // load primary app settings
@@ -48,7 +49,8 @@ namespace LoadFromSpreadsheet
             var appsettings = config.GetSection("appsettings").Get<Application>();
             services.AddSingleton<Application>(appsettings);
 
-
+            // create logger to log to file and to seq server (web based)
+            // file log stores under bin\Debug\netcoreapp3.1\import_2020*
             Log.Logger = new LoggerConfiguration()
                 .WriteTo.File(downloadlog)
                 .WriteTo.Console()
