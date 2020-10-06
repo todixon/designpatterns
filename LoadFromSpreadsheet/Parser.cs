@@ -72,15 +72,21 @@ namespace LoadFromSpreadsheet
 
                     Log.Information(@$"Processing {count}: {c.FirstName} {c.LastName}");
 
-                    var result = db.Query<Spreadsheet>($@"select * from Contacts where firstname like '{first}' and lastname like '{last}' ");
+                    var result = db.Query<Spreadsheet>($@"select * from Contacts where firstname like '{first}' and lastname like '{last}' ").FirstOrDefault();
 
-                    foreach (var a in result)
+
+                    if ( result == null)
                     {
-                        //if (a.Id == 0)
-                        //{
-                        //    // db.Execute($@"Update address set ifg_npn='{c.ContactNPN}' where contactid = '{a.ContactId}'");
-                        //}
+                        db.Execute($@"INSERT INTO Contacts (FirstName,LastName,PhoneNumber,Address,City,State,Zip,EmailAddress,Company)
+                        VALUES ('{result.FirstName}','{result.LastName}', '{result.PhoneNumber}','{result.Address}','{result.City}','{result.State}','{result.Zip}',
+                        '{result.EmailAddress}','{result.Company}')");
+                                            }
+                    else 
+                    { 
+                        // update code
                     }
+
+                    
 
                     count++;
                 }
